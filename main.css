@@ -1,0 +1,61 @@
+body {
+    background-color: cadetblue;
+}
+
+img {
+    
+}
+
+img.elso:hover {
+    /*transform: rotateZ(45deg) rotateX(45deg) rotateY(45deg);*/
+    /*transform: rotate3d(-1, -1, -1, 90deg);*/
+    transform: rotateZ(-20deg);
+    /*transform: scale(0.5, 1) rotateZ(360deg);*/
+    
+    /*transform: matrix(1, -0.3, 0, 1, 0, 0);*/
+    /*méretezés X, nyújtás Y, nyújtás X, méretezés Y, eltolás X, eltolás Y*/
+    /*matrix(scaleX, skewY, skewX, scaleY, translateX, translateY*/
+
+    transition: linear 1s;
+}
+
+img.masodik:hover {
+    transform: translate(100px, 200px);
+    transition: linear 1s;
+}
+
+
+div {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 50px;
+}
+
+.base {
+    border: solid salmon 1px;
+}
+
+.a {
+    background-color: bisque;
+    transform: translateX(200px) rotate(130deg);
+}
+/*nem midegy a sorrend*/
+.b {
+    background-color: aqua;
+    transform: rotate(130deg) translateX(200px);
+}
+
+
+p {
+    padding: 30px;
+}
+
+p span {
+    display: inline-block;
+    transform: scale(10) translate(-1px, 2px);
+}
